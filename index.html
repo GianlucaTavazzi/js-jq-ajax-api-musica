@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="dropdown">
+                <p>Generi</p>
+                <i class="fas fa-caret-down"></i>
+                <ul class="dropdown-list">
+                    <li><p>Rock</p></li>
+                    <li><p>Pop</p></li>
+                    <li><p>Jazz</p></li>
+                    <li><p>Metal</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteiner">
+
+        </div>
+        <script id="templatecard" type="text/x-handlebars-template">
+            <div class="card">
+                <img src="{{img}}" alt="">
+
+                <div class="section">
+                    <p>Title: {{primoparametro}}</p>
+                </div>
+                <div class="section">
+                    <p>Author: {{secondoparametro}}</p>
+                </div>
+                <div class="section">
+                    <p>Genre: {{terzoparametro}}</p>
+                </div>
+                <div class="section">
+                    <p>Year: {{quartoparametro}}</p>
+                </div>
+            </div>
+        </script>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
