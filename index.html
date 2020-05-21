@@ -13,6 +13,7 @@
                 <p>Generi</p>
                 <i class="fas fa-caret-down"></i>
                 <ul class="dropdown-list">
+                    <li><p>Generi</p></li>
                     <li><p>Rock</p></li>
                     <li><p>Pop</p></li>
                     <li><p>Jazz</p></li>
@@ -28,16 +29,16 @@
                 <img src="{{img}}" alt="">
 
                 <div class="section">
-                    <p>Title: {{primoparametro}}</p>
+                    <p>Title: <span>{{primoparametro}}</span></p>
                 </div>
                 <div class="section">
-                    <p>Author: {{secondoparametro}}</p>
+                    <p>Author: <span>{{secondoparametro}}</span></p>
+                </div>
+                <div class="section genre">
+                    <p>Genre: <span>{{terzoparametro}}</span></p>
                 </div>
                 <div class="section">
-                    <p>Genre: {{terzoparametro}}</p>
-                </div>
-                <div class="section">
-                    <p>Year: {{quartoparametro}}</p>
+                    <p>Year: <span>{{quartoparametro}}</span></p>
                 </div>
             </div>
         </script>

@@ -20,6 +20,7 @@ $.ajax({
                 'terzoparametro' : dati.genre,
                 'quartoparametro' : dati.year,
             }
+            console.log(dati.genre);
             var card_finale = template_function(card);
             $('.conteiner').append(card_finale);
         }
@@ -27,4 +28,20 @@ $.ajax({
     'error' : function() {
         alert('si è verificato un errore');
     }
+})
+
+$('.dropdown').on('click','.dropdown-list li', function () {
+    var testo = $(this).text();
+    $('.genre span').each(function () {
+        var p = $(this).text();
+        if (testo==p) {
+            $(this).parents('.card').show();
+        } else if (testo == 'Generi') {
+            $('.card').show();
+        } else {
+            $(this).parents('.card').hide();
+        }
+    });
+
+    
 })
